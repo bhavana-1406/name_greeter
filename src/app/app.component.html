@@ -1,0 +1,9 @@
+<form action="#" (ngSubmit)="getinginfo(info)">
+<label for ="name">Name:</label>
+<input type="text" id="name" name="name"  #info>
+<button  type="submit">submit</button>
+</form> <br>
+
+<div *ngIf="bool">
+  wellcome to {{name|async}}
+</div>
